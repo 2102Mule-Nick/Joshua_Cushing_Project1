@@ -7,7 +7,6 @@ serviceName ="confirmerImplService")
 public class ConfirmerImpl implements Confirmer {
 
 	public String confirm() {
-		// TODO Auto-generated method stub
-		return null;
+		return "SOAP ONLINE";
 	}
 }

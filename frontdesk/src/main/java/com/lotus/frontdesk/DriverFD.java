@@ -1,11 +1,17 @@
 package com.lotus.frontdesk;
 
+import com.lotus.staykeep.Confirmer;
+import com.lotus.staykeep.ConfirmerImplService;
+
 //Driver class for frontdesk
 public class DriverFD {
 	
 	//Entry point for frontdesk
 	public static void main(String[] args) {
-	
+		
+		ConfirmerImplService cis = new ConfirmerImplService();
+		Confirmer confirmer = cis.getConfirmerImplPort();
+		System.out.println(confirmer.confirm());
 	}
 }
 	
