@@ -6,7 +6,7 @@ public class OnlineUser {
 	private String phone;
 	private String user_name;
 	private String pass_word;
-	private String g_id;
+	private int g_id;
 
 	public int getOu_id() {
 		return ou_id;
@@ -48,15 +48,15 @@ public class OnlineUser {
 		this.pass_word = pass_word;
 	}
 
-	public String getG_id() {
+	public int getG_id() {
 		return g_id;
 	}
 
-	public void setG_id(String g_id) {
+	public void setG_id(int g_id) {
 		this.g_id = g_id;
 	}
 
-	public OnlineUser(int ou_id, String email, String phone, String user_name, String pass_word, String g_id) {
+	public OnlineUser(int ou_id, String email, String phone, String user_name, String pass_word, int g_id) {
 		super();
 		this.ou_id = ou_id;
 		this.email = email;
@@ -74,7 +74,6 @@ public class OnlineUser {
 	@Override
 	public String toString() {
 		return "OnlineUser [ou_id=" + ou_id + ", email=" + email + ", phone=" + phone + ", user_name=" + user_name
-				+ ", pass_word=" + pass_word + ", g_id=" + g_id + "]";
+				+ ", pass_word=" + pass_word + "]";
 	}
-
 }

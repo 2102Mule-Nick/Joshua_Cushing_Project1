@@ -5,10 +5,12 @@ import java.sql.SQLException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import com.lotus.frontdesk.extractor.GuestExtractor;
 import com.lotus.frontdesk.pojo.Guest;
 
+@Component
 public class GuestRowMapper implements RowMapper<Guest> {
 
 	private GuestExtractor guestExtractor;

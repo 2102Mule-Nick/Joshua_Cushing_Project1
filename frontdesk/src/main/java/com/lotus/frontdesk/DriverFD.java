@@ -1,10 +1,11 @@
 package com.lotus.frontdesk;
 
+//Driver class for frontdesk
 public class DriverFD {
-
+	
+	//Entry point for frontdesk
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
 	}
 }
 	
