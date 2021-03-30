@@ -9,6 +9,7 @@ public class DriverFD {
 	//Entry point for frontdesk
 	public static void main(String[] args) {
 		
+		//Initial Confirmation that Soap is working
 		ConfirmerImplService cis = new ConfirmerImplService();
 		Confirmer confirmer = cis.getConfirmerImplPort();
 		System.out.println(confirmer.confirm());

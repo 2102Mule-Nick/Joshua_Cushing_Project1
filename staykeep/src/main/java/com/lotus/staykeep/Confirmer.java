@@ -1,3 +1,4 @@
+/*
 package com.lotus.staykeep;
 
 import javax.jws.WebMethod;
@@ -8,3 +9,4 @@ public interface Confirmer {
 	@WebMethod
 	String confirm();
 }
+*/
