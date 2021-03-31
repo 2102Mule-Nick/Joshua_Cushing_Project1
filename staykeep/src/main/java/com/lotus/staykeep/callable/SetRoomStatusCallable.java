@@ -6,29 +6,23 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.CallableStatementCreator;
 
-public class ChangeRoomStatusCallable implements CallableStatementCreator{
+public class SetRoomStatusCallable implements CallableStatementCreator {
 
 	private String status;
 	private int r_id;
 	
 	@Override
 	public CallableStatement createCallableStatement(Connection con) throws SQLException {
-		String sql = "{call change_room_status(?, ?)}";
-		CallableStatement call = con.prepareCall(sql);
-		
-		call.setString(1, status);
-		call.setInt(2, r_id);
-		return call;
+		String sql = "{call set_room_status(?, ?)}";
+		CallableStatement callableStatement = con.prepareCall(sql);
+		callableStatement.setString(1, status);
+		callableStatement.setInt(2, r_id);
+		return callableStatement;
 	}
 
-	public ChangeRoomStatusCallable(String status, int r_id) {
+	public SetRoomStatusCallable(String status, int r_id) {
 		super();
 		this.status = status;
 		this.r_id = r_id;
 	}
-	
-
-
-	
-	
 }

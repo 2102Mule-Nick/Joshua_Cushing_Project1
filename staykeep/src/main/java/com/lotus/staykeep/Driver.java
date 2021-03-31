@@ -1,29 +1,40 @@
 package com.lotus.staykeep;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import com.lotus.staykeep.config.AppConfig;
-import com.lotus.staykeep.dao.RoomDao;
 import com.lotus.staykeep.daoimpl.RoomDaoImpl;
+import com.lotus.staykeep.pojo.Reservation;
 import com.lotus.staykeep.pojo.Room;
+import com.lotus.staykeep.pojo.Stay;
+
 
 //THIS IS A TEST DRIVER
 public class Driver {
 	
 	public static void main(String[] args) {
 		//This is what I was missing. Thanks Iyad. 
-		ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
+		//ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		
-		RoomDao roomDaoImpl = appContext.getBean("roomDaoImpl", RoomDaoImpl.class);
+		//ROOM DAO IMPL TESTS
+		//RoomDaoImpl roomDaoImpl = appContext.getBean("roomDaoImpl", RoomDaoImpl.class);
 		
-		// TEST 1 WORKS
-		//Room room  =  roomDaoImpl.getRoomInfoById(3);
+		//TEST 1: passed
+		//Room room = roomDaoImpl.getRoomInfoById(5);
 		//System.out.println(room);
 		
-		//TEST 2
-		roomDaoImpl.changeRoomStatus("occupied", 6);
-
+		//TEST 2: passed
+		//roomDaoImpl.setRoomStatus("open", 5);
 		
+		//TEST 3: passed
+		//List<Stay> stayList = roomDaoImpl.getStaysByRoom(2);
+		//System.out.println(stayList);
+		
+		//TEST 4: passed
+		//List<Reservation> reservationList = roomDaoImpl.getReservationsByRoom(3);
+		//System.out.println(reservationList);
 	}
 }
 
