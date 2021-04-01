@@ -1,4 +1,4 @@
-/*
+
 package com.lotus.staykeep.mapper;
 
 import java.sql.ResultSet;
@@ -29,4 +29,3 @@ public class OnlineUserRowMapper implements RowMapper<OnlineUser> {
 	}
 
 }
-*/

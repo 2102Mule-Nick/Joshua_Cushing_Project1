@@ -1,4 +1,4 @@
-/*
+
 package com.lotus.staykeep.mapper;
 
 import java.sql.ResultSet;
@@ -27,4 +27,3 @@ public class GuestRowMapper implements RowMapper<Guest> {
 		return guestExtractor.extractData(rs);
 	}
 }
-*/

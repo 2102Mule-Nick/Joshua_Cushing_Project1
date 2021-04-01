@@ -1,4 +1,4 @@
-/*
+
 package com.lotus.staykeep.extractor;
 
 import java.sql.ResultSet;
@@ -23,4 +23,3 @@ public class OnlineUserExtractor implements ResultSetExtractor<OnlineUser> {
 	}
 
 }
-*/
