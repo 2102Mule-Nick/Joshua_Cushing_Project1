@@ -1,4 +1,4 @@
-# PROJECT 1 - Lotus Hotel Suite
+PROJECT 1 - Lotus Hotel Suite
 
 Project Description
 The Lotus Hotel suite is a specialized management system made custom for the Lotus Hotel. 
@@ -7,22 +7,6 @@ When the four work together, staff can easily manage stays, reservations; and gu
 check in and check out of the famous hotel with as little hassle as possible. The system 
 allows the coordination of room service orders, reservations and room maintenance while 
 simultaneously allowing customers to plan their vacations and stays far in advance.
-Lotus Hotel Suite is a hotel booking management service. It features command-line functionality for simple hotel management use cases.
-
-
-Version 1.0.0
-
-Features: 
-
-
-Intuitive menues
-
-
-Java Class Structure
-
-
-Database Connectivity
-
 
 Technologies Used
 Spring Framework
@@ -48,4 +32,5 @@ Improvement 1: Full functionality according to project specifications was not co
 				Ideally full fucntionality would be added.
 				
 Getting Started
+
 	git clone https://github.com/2102Mule-Nick/Joshua_Cushing_Project1.git
